@@ -38,10 +38,6 @@ public class CssSelectors {
         WebElement topic = driver.findElement(By.cssSelector("input[name*='CourseTopic']"));
         topic.sendKeys("QA Automation Course");
 
-
-
-
-
     }
 
 }
