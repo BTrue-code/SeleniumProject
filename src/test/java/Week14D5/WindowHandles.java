@@ -35,7 +35,7 @@ public class WindowHandles {
         b2Btn.click();
         boolean button2 = b2Btn.isDisplayed();
         System.out.println("B2 page window is being displayed " + button2);
-        String b2 = driver.getWindowHandle();
+
 
 
         //Switch to Window Main Page
@@ -49,13 +49,13 @@ public class WindowHandles {
             String url = driver.getCurrentUrl();
 
            if(url.equals("https://syntaxprojects.com/b1-page.php")) {
-                WebElement b1Page = driver.findElement(By.xpath("//h2"));
+                WebElement b1Page = driver.findElement(By.xpath("//h2[text()='Welcome to B1! page']"));
                 String text1 = b1Page.getText();
                 System.out.println("B1 Page text: " + text1);
             }
 
             if(url.equals("https://syntaxprojects.com/b2-page.php")) {
-                WebElement b2Page = driver.findElement(By.xpath("//h2"));
+                WebElement b2Page = driver.findElement(By.xpath("//h2[text()='Welcome to B2 page']"));
                 String text2 = b2Page.getText();
                 System.out.println("B2 Page text: " + text2);
             }
