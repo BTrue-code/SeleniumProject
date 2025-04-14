@@ -48,7 +48,7 @@ public class WindowHandles {
             driver.switchTo().window(handle);
             String url = driver.getCurrentUrl();
 
-           if(url.equals("https://syntaxprojects.com/b1-page.php")) {
+            if(url.equals("https://syntaxprojects.com/b1-page.php")) {
                 WebElement b1Page = driver.findElement(By.xpath("//h2[text()='Welcome to B1! page']"));
                 String text1 = b1Page.getText();
                 System.out.println("B1 Page text: " + text1);
