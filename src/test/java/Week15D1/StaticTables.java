@@ -21,7 +21,7 @@ public class StaticTables {
         for (WebElement list : country) {
             String text = list.getText();
 
-            if(text.equals("Australia")) { //Can Change the Country Name and still get requested results
+            if(text.equals("USA")) { //Can Change the Country Name and still get requested results
                 WebElement row = driver.findElement(By.xpath("//table/tbody/tr[" + count + "]"));
                 System.out.println(row.getText());
             }

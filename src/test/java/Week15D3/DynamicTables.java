@@ -51,11 +51,12 @@ public class DynamicTables {
             for (WebElement ids : allIDs) {
                 String result = ids.getText();
 
-                if (result.equals("26742486")) {
+                if (result.equals("116620A")) {
                     System.out.println(count);
                     WebElement checkBox = driver.findElement(By.xpath("//table/tbody/tr["+count+"]/td[1]"));
                     checkBox.click();
                     notFound = false;
+                    break;
                 }
                 count = count + 1;
             }
